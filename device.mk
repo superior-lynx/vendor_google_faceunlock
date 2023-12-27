@@ -10,13 +10,12 @@ TARGET_FACE_UNLOCK_SUPPORTED := false
 PRODUCT_PACKAGES += \
     SettingsGoogleFutureFaceEnroll
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/google/faceunlock/overlay
-
-# Runtime resource overlays
+# Face Unlock
 PRODUCT_PACKAGES += \
-    FaceEnrollOverlay \
-    FaceEnrollSettingsOverlay
+    FaceEnrollAndroid \
+    FaceEnrollAppOverlay \
+    FaceEnrollSettingsOverlay \
+    FaceEnrollSystemUI
 
 # Permissions
 PRODUCT_COPY_FILES += \
